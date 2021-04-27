@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <ImageView
+        android:id="@+id/imgBluetooth"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:src="@drawable/bluetooth_grayicon"/>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:gravity="center">
+        <SeekBar
+            android:id="@+id/seekRED"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:max="255"/>
+        <TextView
+            android:id="@+id/tvREDValue"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="20sp"
+            android:text="RED : "
+            android:layout_marginBottom="10dp"/>
+        <SeekBar
+            android:id="@+id/seekGREEN"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:max="255"/>
+        <TextView
+            android:id="@+id/tvGREENValue"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="20sp"
+            android:text="GREEN : "
+            android:layout_marginBottom="10dp"/>
+        <SeekBar
+            android:id="@+id/seekBLUE"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:max="255"/>
+        <TextView
+            android:id="@+id/tvBLUEValue"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="20sp"
+            android:text="BLUE : "
+            android:layout_marginBottom="10dp"/>
+    </LinearLayout>
+
+
+</LinearLayout>
